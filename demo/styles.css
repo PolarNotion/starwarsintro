@@ -1,6 +1,7 @@
 body, html{
   height: 100%;
   margin: 0px;
+  background-color: black;
 }
 
 .star-wars-intro {
@@ -14,7 +15,6 @@ body, html{
   overflow: hidden;
   position: relative;
 }
-
 
 .star-wars-intro p.intro-text {
   position: relative;
@@ -37,6 +37,7 @@ body, html{
   margin-left: auto;
   margin-right: auto;
   position: absolute;
+  z-index: 3;
   width: 98%;
   height: 50em;
   bottom: 0;
@@ -64,12 +65,25 @@ body, html{
   background: transparent;
   text-decoration: none;
   margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.star-wars-intro .space-button:hover {
+  color: #D2BE03;
+  border-color: #D2BE03;
+}
+
+.star-wars-intro .space-button:active,
+.star-wars-intro .space-button:focus {
+  color: #B8A40A;
+  border-color: #B8A40A;
 }
 
 .star-wars-intro .title-content {
   position: absolute;
   top: 100%;
-  animation: scroll 120s linear 4s infinite;
+  animation: scroll 120s linear 4s forwards;
 }
 
 .star-wars-intro .title-content > .content-header {
@@ -176,6 +190,6 @@ body, html{
   .star-wars-intro .title-content {
     position: absolute;
     top: 100%;
-    animation: scroll 100s linear 4s infinite;
+    animation: scroll 100s linear 4s forwards;
   }
 }
