@@ -1,0 +1,241 @@
+body {
+  background: url("stars-bg.jpg") center center;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: "Droid Sans", arial, verdana, sans-serif;
+  font-weight: 700;
+  color: #EBD71C;
+  background-color: #000;
+  overflow: hidden;
+}
+
+a, a:hover, a:active, a:focus {
+  color: #EBD71C;
+
+}
+
+.h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container-sm {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+p#start {
+  position: relative;
+  max-width: 16em;
+  font-size: 200%;
+  font-weight: 400;
+  margin: 20% auto;
+  color: #4ee;
+  opacity: 0;
+  z-index: 1;
+  -webkit-animation: intro 2s ease-out;
+  -moz-animation: intro 2s ease-out;
+  -ms-animation: intro 2s ease-out;
+  -o-animation: intro 2s ease-out;
+  animation: intro 2s ease-out;
+}
+
+@-webkit-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+h1 {
+  position: absolute;
+  width: 2.6em;
+  left: 50%;
+  top: 25%;
+  font-size: 10em;
+  text-align: center;
+  margin-left: -1.3em;
+  line-height: 0.8em;
+  letter-spacing: -0.05em;
+  color: #000;
+  text-shadow: -2px -2px 0 #EBD71C, 2px -2px 0 #EBD71C, -2px 2px 0 #EBD71C, 2px 2px 0 #EBD71C;
+  opacity: 0;
+  z-index: 1;
+  -webkit-animation: logo 5s ease-out 2.5s;
+  -moz-animation: logo 5s ease-out 2.5s;
+  -ms-animation: logo 5s ease-out 2.5s;
+  -o-animation: logo 5s ease-out 2.5s;
+  animation: logo 5s ease-out 2.5s;
+}
+
+h1 sub {
+  display: block;
+  font-size: 0.3em;
+  letter-spacing: 0;
+  line-height: 0.8em;
+}
+
+@-webkit-keyframes logo {
+  0% { -webkit-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -webkit-transform: scale(0.1); opacity: 0; }
+}
+
+@-moz-keyframes logo {
+  0% { -moz-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -moz-transform: scale(0.1); opacity: 0; }
+}
+
+@-ms-keyframes logo {
+  0% { -ms-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -ms-transform: scale(0.1); opacity: 0; }
+}
+
+@-o-keyframes logo {
+  0% { -o-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -o-transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes logo {
+  0% { transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { transform: scale(0.1); opacity: 0; }
+}
+
+.pad {
+  padding: 20px;
+}
+
+.btn-lg {
+  border-radius: 0px;
+  padding: 35px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btn-primary-outline {
+  border: 2px solid #EBD71C;
+  color: #EBD71C;
+  border-radius: 0px;
+  font-weight: bold;
+}
+.btn-primary-outline:hover,
+.btn-primary-outline:focus {
+  background-color: #EBD71C;
+  color: black;
+}
+.btn-trigger-rsvp {
+  display: none;
+}
+#titles {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 98%;
+  height: 50em;
+  bottom: 0;
+  /*left: auto;*/
+  /*margin-left: -9em;*/
+  font-size: 80px;
+  font-weight: bold;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(350px) rotateX(25deg);
+}
+#titles:after {
+  position: absolute;
+  content: ' ';
+  /*left: 0;
+  right: 0;*/
+  top: 0;
+  bottom: 60%;
+  background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+  pointer-events: none;
+}
+#titlecontent {
+  position: absolute;
+  top: 100%;
+  animation: scroll 120s linear 4s infinite;
+}
+
+@keyframes scroll {
+  0% { top: 100%; }
+  100% { top: -170%; }
+}
+
+@media screen and (max-width: 720px) {
+  #titles {
+    font-size: 35px;
+  }
+  #titlecontent {
+    position: absolute;
+    top: 100%;
+    animation: scroll 100s linear 4s infinite;
+  }
+}
+
+#register {
+  background: url("planet-bg.jpg") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  left: 0;
+  background-color: #000;
+  display: none;
+  z-index: 999;
+  padding: 20px 20px;
+  overflow: scroll;
+}
+#register p strong {
+  text-transform: uppercase;
+}
+#register p {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
